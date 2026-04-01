@@ -1,6 +1,7 @@
 remote_theme: mmistakes/minimal-mistakes@4.24.0
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
 
 title: "GATES-Lab"
 description: "Using AI to speed up atmospheric transport and greenhouse gas emissions inference. Based at the Atmospheric Chemistry Research Group at the University of Bristol"
