@@ -7,3 +7,6 @@ title: "GATES-Lab"
 description: "Using AI to speed up atmospheric transport and greenhouse gas emissions inference. Based at the Atmospheric Chemistry Research Group at the University of Bristol"
 
 minimal_mistakes_skin: "air"
+
+include:
+  - _pages
