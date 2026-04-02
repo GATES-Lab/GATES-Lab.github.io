@@ -1,4 +1,6 @@
 main:
+  - title: "Home"
+    url: /
   - title: "Methodology"
     url: /methodology/
   - title: "Publications"
