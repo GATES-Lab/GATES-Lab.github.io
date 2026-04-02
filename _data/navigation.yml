@@ -1,9 +1,11 @@
 main:
-  - title: "About"
+  - title: "Home"
+    url: /
+  - title: "Methodology"
+    url: /methodology/
+  - title: "Publications"
+    url: /publications/
+  - title: "About us"
     url: /about/
-  - title: "Research"
-    url: /research/
-  - title: "Team"
-    url: /team/
-  - title: "Data"
-    url: /data/
+  - title: "Projects"
+    url: /projects/
