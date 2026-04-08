@@ -7,8 +7,13 @@
 macOS (zsh):
 ```bash
 xcode-select --install
-brew install ruby
+brew install ruby@3.2
 gem install bundler
+# Add path to shell config
+echo 'export PATH="/opt/homebrew/opt/ruby@3.2/bin:$PATH"' >> ~/.zshrc
+# Reload 
+source ~/.zshrc
+# Then restart computer to clear xcode cache
 ```
 
 Windows (PowerShell):
