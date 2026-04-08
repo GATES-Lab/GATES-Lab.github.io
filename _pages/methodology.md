@@ -5,7 +5,9 @@ permalink: /methodology/
 ---
 
 ### Inversion pipeline - ingredients
-<h4></h4>
+
+
+
 <div class="circle-gallery text-sm">
   <figure class="circle-item">
     <img src="/assets/placeholders/sahara_fp_1_square.png" alt="Observations" class="image-circle image-150" />
@@ -58,6 +60,10 @@ permalink: /methodology/
   <img src="/assets/placeholders/sahara_fp_1_square.png" alt="Receptor placement" class="image-circle image-150" />
 </div>
 
+<figure>
+  <img src="/assets/images/architecture_diagram.png" alt="GATES architecture diagram" />
+  <figcaption>Overview of the GATES model architecture</figcaption>
+</figure>
 
 <!-- <div class="media-row media-row--image-right text-sm">
   <div class="media-row__content">
