@@ -10,11 +10,19 @@ $border-color:        #CBC2B4;   // Pale Oak — dividers
 
 $masthead-link-color:       #D57B67;   // nav links
 $masthead-link-color-hover: #EAAF95;   // nav hover
+$masthead-background-color: #faf6f6;   // header background only
 $footer-background-color:   #616B6C;   // Dim Grey footer
 $footer-link-color:         #EAAF95;   // Peach Fuzz footer links
 
 @import "minimal-mistakes/skins/air";
 @import "minimal-mistakes";
+
+/* Keep header color independent from overall site background */
+.masthead,
+.greedy-nav,
+.greedy-nav .hidden-links {
+	background-color: $masthead-background-color;
+}
 
 /* Tighten space above and below the header content */
 .masthead__inner-wrap {
