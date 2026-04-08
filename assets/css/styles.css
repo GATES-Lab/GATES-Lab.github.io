@@ -86,13 +86,6 @@
 }
 
 .circle-item figcaption {
-  color: inherit;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-style: normal;
-  font-weight: inherit;
-  line-height: 1.3;
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -140,6 +133,19 @@
 /* subpage typography (layout: single) */
 .layout--single .page__content {
   font-size: 0.95rem;
+}
+
+/* Override theme figcaption defaults for subpages */
+.layout--single .page__content figure figcaption,
+.layout--single .page__content .circle-item figcaption {
+  color: inherit !important;
+  font-family: inherit !important;
+  font-size: 0.75rem !important;
+  font-style: normal !important;
+  font-weight: inherit !important;
+  line-height: 1.3 !important;
+  text-align: center !important;
+  margin-bottom: 0 !important;
 }
 
 @media (min-width: 64em) {
