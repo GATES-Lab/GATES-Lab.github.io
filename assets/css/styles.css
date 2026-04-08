@@ -1,4 +1,10 @@
 /* design elements */
+:root {
+  --single-page-right-gutter: 200px;
+  --single-page-toc-width: 200px;
+  --single-page-toc-padding-left: 0.75rem;
+}
+
 .row,
 .media-row {
   display: flex;
@@ -150,15 +156,15 @@
 
 @media (min-width: 64em) {
   .layout--single .page {
-    width: calc(100% - 120px);
-    padding-right: 150px;
+    width: calc(100% - var(--single-page-right-gutter));
+    padding-right: var(--single-page-right-gutter);
   }
 }
 
 @media (min-width: 80em) {
   .layout--single .page {
-    width: calc(100% - 180px);
-    padding-right: 180px;
+    width: calc(100% - var(--single-page-right-gutter));
+    padding-right: var(--single-page-right-gutter);
   }
 }
 
@@ -170,3 +176,38 @@
 .layout--single .page__content .text-lg {
   font-size: 1.05rem;
 }
+
+/* Keep the right-hand TOC inside the existing page margin */
+.layout--single .page__content > .sidebar__right {
+  box-sizing: border-box;
+}
+
+@media (min-width: 64em) {
+  .layout--single .page__content > .sidebar__right {
+    width: var(--single-page-toc-width);
+    margin-right: calc(var(--single-page-toc-width) * -1);
+    padding-left: var(--single-page-toc-padding-left);
+  }
+}
+
+.layout--single .page__content > .sidebar__right .toc {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
+
+.layout--single .page__content > .sidebar__right .nav__title,
+.layout--single .page__content > .sidebar__right .toc__menu a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.layout--single .page__content > .sidebar__right .toc__menu a {
+  color: #D57B67;
+}
+
+.layout--single .page__content > .sidebar__right .toc__menu a:hover {
+  color: #EAAF95;
+}
+

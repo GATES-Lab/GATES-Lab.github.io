@@ -2,9 +2,14 @@
 layout: single
 title: "Methodology"
 permalink: /methodology/
+toc: true
+toc_label: "On this page"
+toc_sticky: True
 ---
 
-### Inversion pipeline - ingredients
+### Inversion pipeline 
+
+- ingredients
 
 
 
@@ -59,6 +64,10 @@ permalink: /methodology/
   </div>
   <img src="/assets/placeholders/sahara_fp_1_square.png" alt="Receptor placement" class="image-circle image-150" />
 </div>
+
+
+
+### Architecture
 
 <figure>
   <img src="/assets/images/architecture_diagram.png" alt="GATES architecture diagram" />
