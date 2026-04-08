@@ -8,5 +8,14 @@ description: "Using AI to speed up atmospheric transport and greenhouse gas emis
 
 minimal_mistakes_skin: "air"
 
+atom_feed:
+  hide: true
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/GATES-Lab/GATES_LPDM_emulator"
+
 include:
   - _pages
