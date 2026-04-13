@@ -7,8 +7,13 @@
 macOS (zsh):
 ```bash
 xcode-select --install
-brew install ruby
+brew install ruby@3.2
 gem install bundler
+# Add path to shell config
+echo 'export PATH="/opt/homebrew/opt/ruby@3.2/bin:$PATH"' >> ~/.zshrc
+# Reload 
+source ~/.zshrc
+# Then restart computer to clear xcode cache
 ```
 
 Windows (PowerShell):
@@ -64,3 +69,28 @@ Then open the local path, which is the following by default:
 - If commits show large markdown diffs, configure Git line endings for your setup:
 	- Windows typical: `git config --global core.autocrlf true`
 	- macOS typical: `git config --global core.autocrlf input`
+
+### 7) Mac permission error when trying to use the `gem install bundler` command
+You need sudo to fix the ownership first:
+- Give yourself ownership of the file:
+```bash
+sudo chown {insert your user account here} ~/.zshrc
+```
+
+- Now add write permission:
+```bash
+chmod u+w ~/.zshrc
+```
+- Then add the PATH line:
+```bash
+echo 'export PATH="/opt/homebrew/opt/ruby@3.2/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+- Verify Ruby:
+```bash
+which ruby
+```
+- Install bundler:
+```bash
+gem install bundler
+```
