@@ -1,4 +1,5 @@
 ### Repo structure
+```
 .
 |-- Gemfile - necessary to deploy websites on local
 |-- README.md
@@ -23,7 +24,7 @@
 |   |-- editing.md
 |   `-- local_development.md
 |-- index.md - landing page
-
+```
 
 ### Adding a page and page fomat
 Each page .md file should start with the following structure:
