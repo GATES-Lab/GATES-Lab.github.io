@@ -1,0 +1,260 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Prerequisites - GATES-Lab</title>
+<meta name="description" content="Using AI to speed up atmospheric transport and greenhouse gas emissions inference. Based at the Atmospheric Chemistry Research Group at the University of Bristol">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="GATES-Lab">
+<meta property="og:title" content="Prerequisites">
+<meta property="og:url" content="http://localhost:4000/how_tos/local_development.html">
+
+
+  <meta property="og:description" content="Using AI to speed up atmospheric transport and greenhouse gas emissions inference. Based at the Atmospheric Chemistry Research Group at the University of Bristol">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/how_tos/local_development.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="GATES-Lab Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--default">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          GATES-Lab
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/methodology/">Methodology</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/">Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About us</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <h3 id="prerequisites">Prerequisites</h3>
+<ul>
+  <li>Ruby (recommended via Homebrew on macOS)</li>
+  <li>Bundler</li>
+</ul>
+
+<h3 id="first-time-setup">First-time setup</h3>
+
+<p>macOS (zsh):</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xcode-select <span class="nt">--install</span>
+brew <span class="nb">install </span>ruby@3.2
+gem <span class="nb">install </span>bundler
+<span class="c"># Add path to shell config</span>
+<span class="nb">echo</span> <span class="s1">'export PATH="/opt/homebrew/opt/ruby@3.2/bin:$PATH"'</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="c"># Reload </span>
+<span class="nb">source</span> ~/.zshrc
+<span class="c"># Then restart computer to clear xcode cache</span>
+</code></pre></div></div>
+
+<p>Windows (PowerShell):
+Install <code class="language-plaintext highlighter-rouge">ruby_devkit 3.4.x</code> from (<a href="https://rubyinstaller.org/downloads/">https://rubyinstaller.org/downloads/</a>), ensure MSYS2 is also installed
+In the powershell, install the packages. Then <code class="language-plaintext highlighter-rouge">cd</code> to your repo, where there should be a file called <code class="language-plaintext highlighter-rouge">Gemfile</code>, and install it</p>
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gem</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">bundler</span><span class="w"> </span><span class="nx">jekyll</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="setup">Setup</h3>
+<p><code class="language-plaintext highlighter-rouge">cd</code> to your repo, where there should be a file called <code class="language-plaintext highlighter-rouge">Gemfile</code>, and install it</p>
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cd</span><span class="w"> </span><span class="nx">/path/to/my/repo</span><span class="w">
+</span><span class="n">bundle</span><span class="w"> </span><span class="nx">install</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="run-locally">Run locally</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve <span class="nt">--livereload</span>
+</code></pre></div></div>
+
+<p>Then open the local path, which is the following by default:</p>
+
+<ul>
+  <li>http://127.0.0.1:4000</li>
+</ul>
+
+<h2 id="troubleshooting-macos-and-windows">Troubleshooting (macOS and Windows)</h2>
+
+<h3 id="1-bundle-install-fails">1) <code class="language-plaintext highlighter-rouge">bundle install</code> fails</h3>
+<ul>
+  <li>macOS: ensure Xcode Command Line Tools are installed: <code class="language-plaintext highlighter-rouge">xcode-select --install</code></li>
+  <li>macOS: if Ruby is missing/outdated, install with Homebrew: <code class="language-plaintext highlighter-rouge">brew install ruby</code></li>
+  <li>Windows: install Ruby via RubyInstaller (with MSYS2) and reopen terminal</li>
+</ul>
+
+<h3 id="2-bundle-command-is-not-found-after-install">2) <code class="language-plaintext highlighter-rouge">bundle</code> command is not found after install</h3>
+<ul>
+  <li>macOS: restart terminal so PATH updates are applied</li>
+  <li>Windows PowerShell: restart terminal after Ruby/Bundler install</li>
+  <li>Run: <code class="language-plaintext highlighter-rouge">gem install bundler</code></li>
+</ul>
+
+<h3 id="3-jekyll-fails-with-missing-gems">3) Jekyll fails with missing gems</h3>
+<ul>
+  <li>Run: <code class="language-plaintext highlighter-rouge">bundle install</code></li>
+  <li>Then run with Bundler prefix: <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve --livereload</code></li>
+</ul>
+
+<h3 id="4-server-starts-but-page-does-not-load">4) Server starts but page does not load</h3>
+<ul>
+  <li>Open: http://127.0.0.1:4000</li>
+  <li>If port 4000 is busy, run: <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve --livereload --port 4001</code></li>
+</ul>
+
+<h3 id="5-theme-or-content-changes-are-not-appearing">5) Theme or content changes are not appearing</h3>
+<ul>
+  <li>Stop server and restart: <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve --livereload</code></li>
+  <li>If needed, clean generated files: <code class="language-plaintext highlighter-rouge">bundle exec jekyll clean</code></li>
+</ul>
+
+<h3 id="6-windows-line-ending-issues">6) Windows line-ending issues</h3>
+<ul>
+  <li>If commits show large markdown diffs, configure Git line endings for your setup:
+    <ul>
+      <li>Windows typical: <code class="language-plaintext highlighter-rouge">git config --global core.autocrlf true</code></li>
+      <li>macOS typical: <code class="language-plaintext highlighter-rouge">git config --global core.autocrlf input</code></li>
+    </ul>
+  </li>
+</ul>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 GATES-Lab. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
