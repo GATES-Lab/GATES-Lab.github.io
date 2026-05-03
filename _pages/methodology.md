@@ -2,69 +2,11 @@
 layout: single
 title: "Methodology"
 permalink: /methodology/
-toc: true
-toc_label: "On this page"
-toc_sticky: True
+#toc: true
+#toc_label: "On this page"
+#toc_sticky: True
+#toc_icon: "list"
 ---
-
-### Inversion pipeline 
-
-- ingredients
-
-
-
-<div class="circle-gallery text-sm">
-  <figure class="circle-item">
-    <img src="/assets/placeholders/sahara_fp_1_square.png" alt="Observations" class="image-circle image-150" />
-    <figcaption>Satellite observations</figcaption>
-  </figure>
-  <figure class="circle-item">
-    <img src="/assets/placeholders/sahara_fp_1_square.png" alt="Transport footprints" class="image-circle image-150" />
-    <figcaption>Transport footprints</figcaption>
-  </figure>
-  <figure class="circle-item">
-    <img src="/assets/placeholders/sahara_fp_1_square.png" alt="Prior fluxes" class="image-circle image-150" />
-    <figcaption>Prior fluxes</figcaption>
-  </figure>
-  <figure class="circle-item">
-    <img src="/assets/placeholders/sahara_fp_1_square.png" alt="Inversion algorithm" class="image-circle image-150" />
-    <figcaption>Inversion algorithm</figcaption>
-  </figure>
-</div>
-
-
-
-### Using GATES: Training
-
-<div class="media-row media-row--image-left text-sm">
-  <div class="media-row__content">
-    <h4>1. Prepare the footprints</h4>
-    <p> cropping and things </p>
-  </div>
-  <img src="/assets/placeholders/sahara_fp_1_square.png" alt="Receptor placement" class="image-circle image-150" />
-</div>
-
-<div class="media-row text-sm">
-  <div class="media-row__media-group">
-    <img src="/assets/placeholders/sahara_fp_1_square.png" alt="Left example 1" class="image-circle image-100" />
-    <img src="/assets/placeholders/sahara_fp_1_square.png" alt="Left example 2" class="image-circle image-100" />
-  </div>
-  <div class="media-row__content">
-    <h4>2. Prepare the inputs: meteorology and topography</h4>
-    <p>
-      This is the pattern to use when you want a pair of circular images on the left and the text on the right.
-    </p>
-  </div>
-</div>
-
-<div class="media-row media-row--image-left text-sm">
-  <div class="media-row__content">
-    <h4>3. Train the model</h4>
-    <p> info about the algorithm and stuff </p>
-  </div>
-  <img src="/assets/placeholders/sahara_fp_1_square.png" alt="Receptor placement" class="image-circle image-150" />
-</div>
-
 
 
 ### Architecture
@@ -74,18 +16,12 @@ toc_sticky: True
   <figcaption>Overview of the GATES model architecture</figcaption>
 </figure>
 
-<!-- <div class="media-row media-row--image-right text-sm">
-  <div class="media-row__content">
-    <h4>Preparing the outputs: footprints</h4>
-    <p>
-      cropping and things
-    </p>
-  </div>
-  <img src="/assets/placeholders/sahara_fp_1_square.png" alt="Receptor placement" class="image-circle image-150" />
-</div> -->
+GATES is built on a Graph Neural Network, inspired by the early weather forecasting method developed by [Keisler et al.](https://arxiv.org/abs/2202.07575). The meteorological inputs are represented on a latitude-longitude grid, which is then mapped onto a coarser triangular mesh. Information spreads across the mesh through a series of message-passing steps, where each node updates its representation based on its neighbours, before being decoded back onto the original grid to produce the footprint. Read more about it [here](https://gmd.copernicus.org/articles/19/1893/2026/#section3).
 
 
-
+### Inversions pipeline
+Coming soon!
+{: .notice}
 
 
 
