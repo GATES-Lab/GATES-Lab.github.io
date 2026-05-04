@@ -27,7 +27,7 @@ Please note that this website is still in development!
 
 {% include feature_row id="intro" type="left" %}
 
-One LPDM is needed for each observation, and takes 10-20 minutes, therefore LPDM-based approaches run into strong computational bottlenecks when applied to dense observation systems. The need for an efficient approximation is clear! GATES provides footprints approximately 1000x faster than an LPDM.
+One LPDM run is needed for each observation, and takes 10-20 minutes, therefore LPDM-based approaches run into strong computational bottlenecks when applied to dense observation systems. The need for an efficient approximation is clear! GATES provides footprints approximately 1000x faster than an LPDM.
 {: .notice--info}
 
 {% include feature_row id="currently" type="right" %}
