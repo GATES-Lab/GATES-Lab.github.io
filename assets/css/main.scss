@@ -2,16 +2,45 @@
 ---
 $primary-color:        #D57B67;   // Burnt Peach — buttons, highlights
 $link-color:          #D57B67;   // Sky Reflection — links
-$link-color-hover:    #EAAF95;   // Peach Fuzz — link hover
+$link-color-hover:    #D57B67;  // EAAF95 // Peach Fuzz — link hover
 $background-color:    #ffffff;
 $text-color:          #616B6C;   // Dim Grey — body text
 $muted-text-color:    #ABC7DB;   // Pale Sky — captions, secondary
 $border-color:        #CBC2B4;   // Pale Oak — dividers
 
-$masthead-link-color:       #CBC2B4;   // nav links
-$masthead-link-color-hover: #EAAF95;   // nav hover
+$masthead-link-color:       #D57B67;   // nav links
+$masthead-link-color-hover: #D57B67;  // #EAAF95 // nav hover
+$masthead-background-color: #faf6f6;   // header background only
 $footer-background-color:   #616B6C;   // Dim Grey footer
 $footer-link-color:         #EAAF95;   // Peach Fuzz footer links
 
 @import "minimal-mistakes/skins/air";
 @import "minimal-mistakes";
+
+/* Keep header color independent from overall site background */
+.masthead,
+.greedy-nav,
+.greedy-nav .hidden-links {
+	background-color: $masthead-background-color;
+}
+
+/* Tighten space above and below the header content */
+.masthead__inner-wrap {
+	padding-top: 0.35em;
+	padding-bottom: 0.35em;
+}
+
+/* Show lab logo next to the site title in the masthead */
+.greedy-nav .site-title {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.2rem;
+}
+
+.greedy-nav .site-title::before {
+	content: "";
+	width: 4rem;
+	height: 4rem;
+	flex: 0 0 4rem;
+	background: url("/assets/logos/logo1_orange_bg.png") center / contain no-repeat;
+}
