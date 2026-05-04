@@ -14,7 +14,7 @@ excerpt: "ML for atmospheric transport!"
 intro:
   - image_path: /assets/images/key_figure.jpg
     alt: "Summary figure from the GATES paper" 
-    excerpt: "**GATES** (Graph-Neural-Network Atmospheric Transport Emulation System) is a Machine Learning model trained to output *footprints*: spatial maps that describe, for each measurement, where surface emissions influenced that observation. <br> <br> Footprints are generated with Lagrangian Particle Dispersion Models in a backward setting: thousands of particles travel backward from the measurement location, tracking wherever they interact with the surface. They are a key component of **inverse modelling**: the process of working backwards from atmospheric measurements to estimate the surface emissions that produced them."
+    excerpt: "**GATES** (Graph-Neural-Network Atmospheric Transport Emulation System) is a Machine Learning model trained to output *footprints*: spatial maps that describe, for each measurement, where surface emissions influenced that observation. <br> <br> Footprints are a key component of **inverse modelling**: the process of working backwards from atmospheric measurements to estimate the surface emissions that produced them. Typically, footprints are generated with Lagrangian Particle Dispersion Models (LPDM) in a backward setting: thousands of particles travel backward from the measurement location, tracking wherever they interact with the surface. "
 currently:
   - image_path: /assets/animations/footprints_jan2017.gif
     alt: "some alt text"
@@ -27,7 +27,7 @@ Please note that this website is still in development!
 
 {% include feature_row id="intro" type="left" %}
 
-With each LPDM run taking 10-20 minutes, an one run needed for each observation, LPDM-based approaches run into strong computational bottlenecks when applied to dense observation systems. The need for an efficient approximation is clear!
+One LPDM is needed for each observation, and takes 10-20 minutes, therefore LPDM-based approaches run into strong computational bottlenecks when applied to dense observation systems. The need for an efficient approximation is clear! GATES provides footprints approximately 1000x faster than an LPDM.
 {: .notice--info}
 
 {% include feature_row id="currently" type="right" %}
