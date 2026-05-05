@@ -4,7 +4,7 @@ title: "About us"
 permalink: /about/
 ---
 
-We are a team based at the University of Bristol (UK), with team members working in the [Atmospheric Chemistry Research Group](https://www.bristol.ac.uk/chemistry/research/acrg/) and in the [School of Engineering Mathematics and Technology](https://www.bristol.ac.uk/science-engineering/schools/eng-maths-tech/).
+We are a team based at the University of Bristol (UK), with team members working in the School of Chemistry's [Atmospheric Chemistry Research Group](https://www.bristol.ac.uk/chemistry/research/acrg/) and in the [School of Engineering Mathematics and Technology](https://www.bristol.ac.uk/science-engineering/schools/eng-maths-tech/).
 
 ## Funding
 The GATES model was initially developed under a Google Research PhD Scholarship to Elena Fillola Mayoral, 2022 – 2026.

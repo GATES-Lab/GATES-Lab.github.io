@@ -26,8 +26,6 @@ Quantifying uncertainty in footprint predictions, and integrating it into the em
 [View conference paper](https://bmva-archive.org.uk/bmvc/2025/assets/workshops/MVCC/Paper_5/paper.pdf) 
 
 ## Visualisation
-Developing methods to present complex data in time and space, including footprint visualisation, meteorological data and methane retrievals.
-
-View abstract on Unity-based TROPOMI visualisations [here](https://meetingorganizer.copernicus.org/EGU26/EGU26-20973.html).
+Developing methods to present complex data in time and space, including footprint visualisation, meteorological data, and methane retrievals. Includes Unity-based TROPOMI visualisations on the [Reality Emulator](https://www.bristol.ac.uk/bristol-digital-futures-institute/our-facilities/reality-emulator/) at the University of Bristol. [View Abstract](https://meetingorganizer.copernicus.org/EGU26/EGU26-20973.html).
 
 
